@@ -424,6 +424,7 @@ body {
     color: white;
     border-color: #333333;
     font-family: Inconsolata, monospace, sans-serif;
+    font-size: 16px;
     border-radius: 8px;
     padding: 2px 4px 4px;
     position: relative;
