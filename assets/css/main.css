@@ -594,7 +594,8 @@ body {
     text-indent: -9999px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    background-color: #000000; }
   .bottom-closer .inner {
     width: 100%;
     position: relative;
