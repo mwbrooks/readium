@@ -18,8 +18,9 @@
     <h1 class="blog-title">{{@blog.title}}</h1>
     <h2 class="blog-description">{{@blog.description}}</h2>
     <div class="custom-links">
+        <a href="http://michaelbrooks.ca" target="_blank"><i class="fa fa-home"></i></a>&nbsp;&nbsp;
         <a href="https://twitter.com/mwbrooks" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
-        <a href="https://instagram.com/mwbrooks" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
+        <a href="http://instagram.com/mikeywbrooks" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
     </div>
 </header>
 
@@ -48,29 +49,6 @@
 
 {{! The main content area on the homepage }}
 <main class="content" role="main">
-    
-    <h5 class="index-headline featured"><span>Featured</span></h5>
-    
-    <div class="container featured">
-        {{#foreach posts}}
-            {{#if featured}}
-                <article class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-                    <div class="article-item">
-                        <header class="post-header">
-                            <h2 class="post-title" itemprop="name"><a href="{{url}}" itemprop="url">{{{title}}}</a></h2>
-                        </header>
-                        <section class="post-excerpt" itemprop="description">
-                            <p>{{excerpt characters="130"}}&hellip;</p>
-                        </section>
-                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">{{tags prefix="on "}}</span></div>
-                    </div>
-                </article>
-            {{/if}}
-        {{/foreach}}
-    </div>
-    
-    
-    <h5 class="index-headline normal"><span>Regular</span></h5>
     
     <div class="cf frame">
     {{#foreach posts}}
